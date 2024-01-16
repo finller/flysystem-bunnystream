@@ -1,0 +1,32 @@
+{
+  "name": "finller/flysystem-bunnystream",
+  "description": "A flysystem driver for Bunny Stream",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Finller\\FlysystemBunnystream\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Quentin Gabriele"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "league/flysystem": "^3.16",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.0",
+    "larastan/larastan": "^2.0"
+  },
+  "scripts": {
+    "analyse": "vendor/bin/phpstan analyse --memory-limit 500M",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
